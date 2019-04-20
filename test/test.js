@@ -1,17 +1,15 @@
-var assert = require('assert'),
+let assert = require('assert'),
     should = require('should'),
     expect = require('chai').expect;
 
+let answer;
 
-var answer;
-var user = {
+let user = {
     name: 'tj',
     pets: ['tobi', 'loki', 'jane', 'bandit']
 };
 
-
-
-var foo = 'bar',
+let foo = 'bar',
     beverages = { tea: ['chai', 'matcha', 'oolong'] };
 
 describe('Test Suite 1', function() {
@@ -45,7 +43,6 @@ describe('Test Suite 1', function() {
             expect(beverages).to.have.property('tea').with.lengthOf(3);
         });
     });
-
 
 });
 
